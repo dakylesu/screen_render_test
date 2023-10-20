@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>SPR 测试图</title>
+</head>
+<body>
+<div>
+	<p>&nbsp;&nbsp;
+		<a href="https://sspai.com/"><img src="少数派LOGO-Final-1.png" height="70"></a>
+		&nbsp;&nbsp;&nbsp;
+		<font size="4" style="position: relative; bottom: 25px;font-family: Arial;">X</font>
+		&nbsp;&nbsp;
+		<a href="https://space.bilibili.com/1514206231"><img src="WechatIMG107.png" height="90" style="top: 7px;position: relative;"></a>
+	</p>
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br /><br />
+	<br />
+
+</div>
+
+<canvas id="line" width="200" height="200" style="border:1px solid #000000;">
+</canvas>
+
+<script type="text/javascript">
+	var c = document.getElementById("line");
+	var dot = c.getContext("2d");
+	var line = c.getContext("2d");
+
+	dot.fillRect(50,35,1,1);
+	dot.fillRect(50,40,2,2);
+
+	// 间隔 1px
+	dot.fillRect(120,30,20,1);
+	dot.fillRect(120,32,20,1);
+	dot.fillRect(120,34,20,1);
+	// 间隔 2px
+	dot.fillRect(120,50,20,1);
+	dot.fillRect(120,53,20,1);
+	dot.fillRect(120,56,20,1);
+
+	// 间隔 1px
+	dot.fillRect(150,30,20,2);
+	dot.fillRect(150,33,20,2);
+	dot.fillRect(150,36,20,2);
+
+	// 间隔 2px
+	dot.fillRect(150,50,20,2);
+	dot.fillRect(150,54,20,2);
+	dot.fillRect(150,58,20,2);
+
+	// 竖间隔 1px
+	dot.fillRect(15,30,1,50);
+	dot.fillRect(17,30,1,50);
+	dot.fillRect(19,30,1,50);
+
+	// 间隔 2px
+	dot.fillRect(25,30,2,50);
+	dot.fillRect(29,30,2,50);
+	dot.fillRect(33,30,2,50);
+
+	dot.beginPath();
+	dot.fillStyle = "#00FF00";
+	// 竖间隔 1px
+	dot.fillRect(15,100,1,50);
+	dot.fillRect(17,100,1,50);
+	dot.fillRect(19,100,1,50);
+	// 间隔 2px
+	dot.fillRect(25,100,2,50);
+	dot.fillRect(29,100,2,50);
+	dot.fillRect(33,100,2,50);
+
+	// 间隔 1px
+	dot.fillRect(15,165,20,1);
+	dot.fillRect(15,167,20,1);
+	dot.fillRect(15,169,20,1);
+	// 间隔 2px
+	dot.fillRect(15,175,20,1);
+	dot.fillRect(15,179,20,1);
+	dot.fillRect(15,183,20,1);
+
+	dot.lineWidth = 1;
+	dot.moveTo(40,165);
+	dot.lineTo(60,185);
+	dot.moveTo(40,167);
+	dot.lineTo(60,187);
+	dot.moveTo(40,169);
+	dot.lineTo(60,189);
+
+	dot.moveTo(70,165);
+	dot.lineTo(90,185);
+	dot.moveTo(70,168);
+	dot.lineTo(90,188);
+	dot.moveTo(70,171);
+	dot.lineTo(90,191);
+
+	dot.strokeStyle = "#00FF00";
+	dot.stroke();
+
+	dot.closePath();
+
+	line.beginPath();
+	line.lineWidth = 1;
+
+	line.moveTo(50,50);
+	line.lineTo(100,100);
+	line.strokeStyle = "#000000";
+	line.moveTo(50,100);
+	line.lineTo(100,50);
+
+	// 倾斜间隔 1px
+	line.moveTo(120,60);
+	line.lineTo(170,110);
+	line.moveTo(120,62);
+	line.lineTo(170,112);
+	// 倾斜间隔 2px
+	line.moveTo(120,75);
+	line.lineTo(170,125);
+	line.moveTo(120,78);
+	line.lineTo(170,128);
+	line.moveTo(120,81);
+	line.lineTo(170,131);
+	// 倾斜间隔 3px
+	line.moveTo(120,90);
+	line.lineTo(170,140);
+	line.moveTo(120,94);
+	line.lineTo(170,144);
+	line.moveTo(120,98);
+	line.lineTo(170,148);
+
+	line.moveTo(50,75);
+	line.lineTo(100,75);
+	
+	line.moveTo(75,50);
+	line.lineTo(75,100);
+
+	line.stroke();
+	line.closePath();
+	var font = c.getContext("2d");
+	font.font = "20px Arial";
+	font.fillStyle = "#000000";
+	font.fillText("两颗皮蛋", 45, 150);
+</script>
+
+
+<canvas id="line2" width="200" height="200" style="border:1px solid #000000;">
+</canvas>
+
+<script type="text/javascript">
+	var c = document.getElementById("line2");
+	var line1 = c.getContext("2d");
+	var dot = c.getContext("2d");
+
+	dot.fillRect(50,35,3,3);
+	dot.fillRect(50,40,4,4);
+
+	// 倾斜间隔 1px
+	dot.fillStyle = "#0000FF";
+	dot.fillRect(120,30,20,1);
+	dot.fillRect(120,32,20,1);
+	dot.fillRect(120,34,20,1);
+	// 倾斜间隔 2px
+	dot.fillRect(120,50,20,1);
+	dot.fillRect(120,53,20,1);
+	dot.fillRect(120,56,20,1);
+
+	// 倾斜间隔 1px
+	dot.fillRect(150,30,20,2);
+	dot.fillRect(150,33,20,2);
+	dot.fillRect(150,36,20,2);
+
+	// 倾斜间隔 2px
+	dot.fillRect(150,50,20,2);
+	dot.fillRect(150,54,20,2);
+	dot.fillRect(150,58,20,2);
+
+	// 竖间隔 1px
+	dot.fillRect(15,30,1,50);
+	dot.fillRect(17,30,1,50);
+	dot.fillRect(19,30,1,50);
+	// 间隔 2px
+	dot.fillRect(25,30,2,50);
+	dot.fillRect(29,30,2,50);
+	dot.fillRect(33,30,2,50);
+
+
+	dot.beginPath();
+	dot.fillStyle = "#FF0000";
+	// 竖间隔 1px
+	dot.fillRect(15,100,1,50);
+	dot.fillRect(17,100,1,50);
+	dot.fillRect(19,100,1,50);
+	// 间隔 2px
+	dot.fillRect(25,100,2,50);
+	dot.fillRect(29,100,2,50);
+	dot.fillRect(33,100,2,50);
+
+	// 间隔 1px
+	dot.fillRect(15,165,20,1);
+	dot.fillRect(15,167,20,1);
+	dot.fillRect(15,169,20,1);
+	// 间隔 2px
+	dot.fillRect(15,175,20,1);
+	dot.fillRect(15,179,20,1);
+	dot.fillRect(15,183,20,1);
+
+	dot.lineWidth = 1;
+	dot.moveTo(40,165);
+	dot.lineTo(60,185);
+	dot.moveTo(40,167);
+	dot.lineTo(60,187);
+	dot.moveTo(40,169);
+	dot.lineTo(60,189);
+
+	dot.moveTo(70,165);
+	dot.lineTo(90,185);
+	dot.moveTo(70,168);
+	dot.lineTo(90,188);
+	dot.moveTo(70,171);
+	dot.lineTo(90,191);
+
+	dot.strokeStyle = "#FF0000";
+	dot.stroke();
+
+	dot.closePath();
+
+	line1.beginPath();
+	line1.lineWidth = 2;
+
+	line1.moveTo(50,50);
+	line1.lineTo(100,100);
+
+	line1.moveTo(50,100);
+	line1.lineTo(100,50);
+
+	line1.moveTo(50,75);
+	line1.lineTo(100,75);
+
+	line1.strokeStyle = "black";
+	
+	line1.moveTo(75,50);
+	line1.lineTo(75,100);
+	line1.stroke();
+	line1.closePath();
+
+	line1.beginPath();
+	var line = c.getContext("2d");
+	// 倾斜间隔 1px
+	line.moveTo(120,60);
+	line.lineTo(170,110);
+	line.moveTo(120,62);
+	line.lineTo(170,112);
+	// 倾斜间隔 2px
+	line.moveTo(120,75);
+	line.lineTo(170,125);
+	line.moveTo(120,78);
+	line.lineTo(170,128);
+	line.moveTo(120,81);
+	line.lineTo(170,131);
+	// 倾斜间隔 3px
+	line.moveTo(120,90);
+	line.lineTo(170,140);
+	line.moveTo(120,94);
+	line.lineTo(170,144);
+	line.moveTo(120,98);
+	line.lineTo(170,148);
+
+	line.lineWidth = 1;
+	line.strokeStyle = "#0000FF";
+	line.stroke();
+	line1.closePath();
+
+	var font = c.getContext("2d");
+	font.font = "25px Arial";
+	font.fillStyle = "#000000";
+	font.fillText("两颗皮蛋", 45, 150);
+</script>
+
+<canvas id="line4" width="200" height="200" style="fill-rule:solid #000000;">
+</canvas>
+
+<script type="text/javascript">
+	var c = document.getElementById("line4");
+	var line = c.getContext("2d");
+	var ctx = c.getContext("2d");
+	ctx.fillStyle = "#000000";
+	ctx.fillRect(0,0,200,200);
+
+	var dot = c.getContext("2d");
+	dot.fillStyle = "#FFFFFF";
+	dot.fillRect(50,35,1,1);
+	dot.fillRect(50,40,2,2);
+
+	// 倾斜间隔 1px
+	dot.fillRect(120,30,20,1);
+	dot.fillRect(120,32,20,1);
+	dot.fillRect(120,34,20,1);
+	// 倾斜间隔 2px
+	dot.fillRect(120,50,20,1);
+	dot.fillRect(120,53,20,1);
+	dot.fillRect(120,56,20,1);
+
+	// 倾斜间隔 1px
+	dot.fillRect(150,30,20,2);
+	dot.fillRect(150,33,20,2);
+	dot.fillRect(150,36,20,2);
+
+	// 倾斜间隔 2px
+	dot.fillRect(150,50,20,2);
+	dot.fillRect(150,54,20,2);
+	dot.fillRect(150,58,20,2);
+
+	// 竖间隔 1px
+	dot.fillRect(15,30,1,50);
+	dot.fillRect(17,30,1,50);
+	dot.fillRect(19,30,1,50);
+
+	// 间隔 2px
+	dot.fillRect(25,30,2,50);
+	dot.fillRect(29,30,2,50);
+	dot.fillRect(33,30,2,50);
+
+	dot.beginPath();
+	dot.fillStyle = "#00FF00";
+	// 竖间隔 1px
+	dot.fillRect(15,100,1,50);
+	dot.fillRect(17,100,1,50);
+	dot.fillRect(19,100,1,50);
+	// 间隔 2px
+	dot.fillRect(25,100,2,50);
+	dot.fillRect(29,100,2,50);
+	dot.fillRect(33,100,2,50);
+
+	// 间隔 1px
+	dot.fillRect(15,165,20,1);
+	dot.fillRect(15,167,20,1);
+	dot.fillRect(15,169,20,1);
+	// 间隔 2px
+	dot.fillRect(15,175,20,1);
+	dot.fillRect(15,179,20,1);
+	dot.fillRect(15,183,20,1);
+
+	dot.lineWidth = 1;
+	dot.moveTo(40,165);
+	dot.lineTo(60,185);
+	dot.moveTo(40,167);
+	dot.lineTo(60,187);
+	dot.moveTo(40,169);
+	dot.lineTo(60,189);
+
+	dot.moveTo(70,165);
+	dot.lineTo(90,185);
+	dot.moveTo(70,168);
+	dot.lineTo(90,188);
+	dot.moveTo(70,171);
+	dot.lineTo(90,191);
+
+	dot.strokeStyle = "#00FF00";
+	dot.stroke();
+
+	dot.closePath();
+
+	line.beginPath();
+	line.lineWidth = 1;
+
+	line.moveTo(50,50);
+	line.lineTo(100,100);
+
+	line.moveTo(50,100);
+	line.lineTo(100,50);
+
+	line.moveTo(50,75);
+	line.lineTo(100,75);
+
+	// 倾斜间隔 1px
+	line.moveTo(120,60);
+	line.lineTo(170,110);
+	line.moveTo(120,62);
+	line.lineTo(170,112);
+	// 倾斜间隔 2px
+	line.moveTo(120,75);
+	line.lineTo(170,125);
+	line.moveTo(120,78);
+	line.lineTo(170,128);
+	line.moveTo(120,81);
+	line.lineTo(170,131);
+	// 倾斜间隔 3px
+	line.moveTo(120,90);
+	line.lineTo(170,140);
+	line.moveTo(120,94);
+	line.lineTo(170,144);
+	line.moveTo(120,98);
+	line.lineTo(170,148);
+
+	line.strokeStyle = "#FFFFFF";
+	
+	line.moveTo(75,50);
+	line.lineTo(75,100);
+	line.stroke();
+	line.closePath();
+
+	var font = c.getContext("2d");
+	font.font = "20px Arial";
+	font.fillStyle = "#FFFFFF";
+	font.fillText("两颗皮蛋", 45, 150);
+</script>
+
+<canvas id="line3" width="200" height="200" style="fill-rule:solid #000000;">
+</canvas>
+
+<script type="text/javascript">
+	var c = document.getElementById("line3");
+	var line = c.getContext("2d");
+	var ctx = c.getContext("2d");
+	ctx.fillStyle = "#000000";
+	ctx.fillRect(0,0,200,200);
+
+	var dot = c.getContext("2d");
+	dot.beginPath();
+	dot.fillStyle = "#FFFFFF";
+	dot.fillRect(50,35,3,3);
+	dot.fillRect(50,40,4,4);
+	dot.closePath();
+
+	dot.beginPath();
+	// 倾斜间隔 1px
+	dot.fillStyle = "#0000FF";
+	dot.fillRect(120,30,20,1);
+	dot.fillRect(120,32,20,1);
+	dot.fillRect(120,34,20,1);
+	// 倾斜间隔 2px
+	dot.fillRect(120,50,20,1);
+	dot.fillRect(120,53,20,1);
+	dot.fillRect(120,56,20,1);
+
+	// 倾斜间隔 1px
+	dot.fillRect(150,30,20,2);
+	dot.fillRect(150,33,20,2);
+	dot.fillRect(150,36,20,2);
+
+	// 倾斜间隔 2px
+	dot.fillRect(150,50,20,2);
+	dot.fillRect(150,54,20,2);
+	dot.fillRect(150,58,20,2);
+
+	// 竖间隔 1px
+	dot.fillRect(15,30,1,50);
+	dot.fillRect(17,30,1,50);
+	dot.fillRect(19,30,1,50);
+	// 间隔 2px
+	dot.fillRect(25,30,2,50);
+	dot.fillRect(29,30,2,50);
+	dot.fillRect(33,30,2,50);
+	dot.closePath();
+
+	dot.beginPath();
+	dot.fillStyle = "#FF0000";
+	// 竖间隔 1px
+	dot.fillRect(15,100,1,50);
+	dot.fillRect(17,100,1,50);
+	dot.fillRect(19,100,1,50);
+	// 间隔 2px
+	dot.fillRect(25,100,2,50);
+	dot.fillRect(29,100,2,50);
+	dot.fillRect(33,100,2,50);
+
+	// 间隔 1px
+	dot.fillRect(15,165,20,1);
+	dot.fillRect(15,167,20,1);
+	dot.fillRect(15,169,20,1);
+	// 间隔 2px
+	dot.fillRect(15,175,20,1);
+	dot.fillRect(15,179,20,1);
+	dot.fillRect(15,183,20,1);
+
+	dot.lineWidth = 1;
+	dot.moveTo(40,165);
+	dot.lineTo(60,185);
+	dot.moveTo(40,167);
+	dot.lineTo(60,187);
+	dot.moveTo(40,169);
+	dot.lineTo(60,189);
+
+	dot.moveTo(70,165);
+	dot.lineTo(90,185);
+	dot.moveTo(70,168);
+	dot.lineTo(90,188);
+	dot.moveTo(70,171);
+	dot.lineTo(90,191);
+
+	dot.strokeStyle = "#FF0000";
+	dot.stroke();
+
+	dot.closePath();
+
+	line.beginPath();
+	line.lineWidth = 2;
+
+	line.moveTo(50,50);
+	line.lineTo(100,100);
+
+	line.moveTo(50,100);
+	line.lineTo(100,50);
+
+	line.moveTo(50,75);
+	line.lineTo(100,75);
+
+	line.strokeStyle = "#FFFFFF";
+	
+	line.moveTo(75,50);
+	line.lineTo(75,100);
+	line.stroke();
+	line.closePath();
+
+	line.beginPath();
+	var line = c.getContext("2d");
+	// 倾斜间隔 1px
+	line.moveTo(120,60);
+	line.lineTo(170,110);
+	line.moveTo(120,62);
+	line.lineTo(170,112);
+	// 倾斜间隔 2px
+	line.moveTo(120,75);
+	line.lineTo(170,125);
+	line.moveTo(120,78);
+	line.lineTo(170,128);
+	line.moveTo(120,81);
+	line.lineTo(170,131);
+	// 倾斜间隔 3px
+	line.moveTo(120,90);
+	line.lineTo(170,140);
+	line.moveTo(120,94);
+	line.lineTo(170,144);
+	line.moveTo(120,98);
+	line.lineTo(170,148);
+
+	line.lineWidth = 1;
+	line.strokeStyle = "#0000FF";
+	line.stroke();
+	line.closePath();
+
+	var font = c.getContext("2d");
+	font.font = "25px Arial";
+	font.fillStyle = "#FFFFFF";
+	font.fillText("两颗皮蛋", 45, 150);
+</script>
+<p>
+	&nbsp;&nbsp;
+	<img id="img1" src="square.and.pencil.svg" width="28">
+	&nbsp;&nbsp;&nbsp;&nbsp;
+	<img id="img2" src="square.and.arrow.down.fill.svg" width="25">
+	&nbsp;&nbsp;&nbsp;&nbsp;
+	<img id="img3" src="person.crop.circle.fill.badge.plus.svg" width="35">
+	&nbsp;&nbsp;&nbsp;&nbsp;
+	<img id="img4" src="airpodsmax.svg" width="28">
+	&nbsp;&nbsp;&nbsp;&nbsp;
+	<img id="img4" src="battery.100.bolt.svg" width="30" style="position: relative; bottom: 8px;">
+	&nbsp;&nbsp;&nbsp;&nbsp;
+	<img id="img4" src="playpause.svg" width="30" style="position: relative; bottom: 5px;">
+</p>
+<br />
+<p>
+	&nbsp;&nbsp;
+	<img id="img1" src="square.and.pencil.svg" width="40">
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<img id="img2" src="square.and.arrow.down.fill.svg" width="35">
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<img id="img3" src="person.crop.circle.fill.badge.plus.svg" width="45">
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<img id="img4" src="airpodsmax.svg" width="40">
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<img id="img4" src="battery.100.bolt.svg" width="40" style="position: relative; bottom: 8px;">
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<img id="img4" src="playpause.svg" width="40" style="position: relative; bottom: 5px;">
+</p>
+
+</body>
+</html>
